@@ -111,10 +111,6 @@ export function AppShell() {
       />
 
       <main className="main-content" style={{ marginLeft: sidebarWidth }}>
-        <header className="main-header">
-          <h1>🤖 AI Agent 对话日志查看器</h1>
-        </header>
-
         {!selectedFile && <div className="empty-state">👈 请在左侧选择文件</div>}
 
         {parseLoading && (
