@@ -124,10 +124,12 @@ AgentTrace/
 │   │   ├── ToolExpander/     # 工具调用折叠框
 │   │   ├── ThinkingBlock/    # 思考过程折叠
 │   │   ├── MarkdownContent/  # Markdown 渲染
-│   │   └── JsonRaw/          # 原文 JSON 展示
+│   │   ├── JsonRaw/          # 原文 JSON 展示
+│   │   ├── LoadingSpinner/   # 加载动画
+│   │   ├── ScrollNav/        # 滚动导航按钮
+│   │   └── Toast/            # 提示消息
 │   ├── hooks/
-│   │   ├── useFileList.ts    # 文件列表管理
-│   │   ├── useSourceSelector.ts # 来源选择管理
+│   │   ├── useSourceSelector.ts # 来源选择与文件列表管理
 │   │   └── useJsonlParser.ts # JSONL 解析逻辑
 │   ├── parsers/
 │   │   ├── index.ts          # 解析器入口
