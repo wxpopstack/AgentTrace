@@ -1,0 +1,144 @@
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.loading-spinner--small {
+  --spinner-size: 24px;
+  --ring-width: 2px;
+}
+
+.loading-spinner--medium {
+  --spinner-size: 48px;
+  --ring-width: 3px;
+}
+
+.loading-spinner--large {
+  --spinner-size: 72px;
+  --ring-width: 4px;
+}
+
+.spinner-ring {
+  position: relative;
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  animation: spinner-rotate 2s linear infinite;
+}
+
+.spinner-segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: var(--ring-width) solid transparent;
+  border-radius: 8px;
+}
+
+.spinner-segment--1 {
+  top: 0;
+  left: 0;
+  border-top-color: #4a90d9;
+  border-left-color: #4a90d9;
+  animation: segment-pulse 1.5s ease-in-out infinite;
+}
+
+.spinner-segment--2 {
+  top: 0;
+  right: 0;
+  border-top-color: #67b7dc;
+  border-right-color: #67b7dc;
+  animation: segment-pulse 1.5s ease-in-out infinite 0.15s;
+}
+
+.spinner-segment--3 {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #4a90d9;
+  border-right-color: #4a90d9;
+  animation: segment-pulse 1.5s ease-in-out infinite 0.3s;
+}
+
+.spinner-segment--4 {
+  bottom: 0;
+  left: 0;
+  border-bottom-color: #67b7dc;
+  border-left-color: #67b7dc;
+  animation: segment-pulse 1.5s ease-in-out infinite 0.45s;
+}
+
+.spinner-inner-ring {
+  position: absolute;
+  width: calc(var(--spinner-size) * 0.5);
+  height: calc(var(--spinner-size) * 0.5);
+  border: var(--ring-width) solid rgba(74, 144, 217, 0.2);
+  border-radius: 50%;
+  animation: inner-ring-pulse 2s ease-in-out infinite;
+}
+
+.spinner-dot {
+  position: absolute;
+  width: calc(var(--spinner-size) * 0.15);
+  height: calc(var(--spinner-size) * 0.15);
+  background: linear-gradient(135deg, #4a90d9, #67b7dc);
+  border-radius: 50%;
+  animation: dot-pulse 1s ease-in-out infinite;
+}
+
+.spinner-text {
+  font-size: 14px;
+  color: #666;
+  animation: text-fade 1.5s ease-in-out infinite;
+}
+
+@keyframes spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes segment-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes inner-ring-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes text-fade {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

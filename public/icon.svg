@@ -1,0 +1,39 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#2563eb"/>
+
+  <!-- Left curly brace { -->
+  <path d="M108 100
+           Q64 100 64 150
+           L64 200
+           Q64 256 44 256
+           Q64 256 64 312
+           L64 362
+           Q64 412 108 412"
+        stroke="white" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- Right curly brace } -->
+  <path d="M404 100
+           Q448 100 448 150
+           L448 200
+           Q448 256 468 256
+           Q448 256 448 312
+           L448 362
+           Q448 412 404 412"
+        stroke="white" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- JSONL message lines - centered -->
+  <g>
+    <rect x="136" y="164" width="240" height="40" rx="8" fill="white"/>
+    <circle cx="156" cy="184" r="12" fill="#7c3aed"/>
+
+    <rect x="136" y="212" width="240" height="40" rx="8" fill="white"/>
+    <circle cx="156" cy="232" r="12" fill="#d97706"/>
+
+    <rect x="136" y="260" width="240" height="40" rx="8" fill="white"/>
+    <circle cx="156" cy="280" r="12" fill="#059669"/>
+
+    <rect x="136" y="308" width="240" height="40" rx="8" fill="white"/>
+    <circle cx="156" cy="328" r="12" fill="#1976d2"/>
+  </g>
+</svg>

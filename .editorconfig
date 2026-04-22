@@ -1,0 +1,26 @@
+# 配置文件
+.prettierrc
+.eslintrc.cjs
+rustfmt.toml
+pyproject.toml
+
+# 构建产物
+dist/
+build/
+src-tauri/target/
+
+# 依赖
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
