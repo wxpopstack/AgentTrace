@@ -37,7 +37,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/before31/AgentTrace.git
+git clone https://github.com/wxpopstack/AgentTrace.git
 cd AgentTrace
 
 # 安装依赖

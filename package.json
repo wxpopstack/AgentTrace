@@ -6,13 +6,13 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/before31/AgentTrace.git"
+    "url": "https://github.com/wxpopstack/AgentTrace.git"
   },
-  "author": "before31",
+  "author": "wxpopstack",
   "bugs": {
-    "url": "https://github.com/before31/AgentTrace/issues"
+    "url": "https://github.com/wxpopstack/AgentTrace/issues"
   },
-  "homepage": "https://github.com/before31/AgentTrace#readme",
+  "homepage": "https://github.com/wxpopstack/AgentTrace#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
